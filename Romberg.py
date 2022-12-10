@@ -1,7 +1,7 @@
 import numpy as np
-from sciPy import integrate
+from scipy import integrate
 Gaussian = lambda x: np.exp(-x**2)
 
-Romberg = integrate.romberg(Iter, 0, 3, show = True)
+Romberg = integrate.romberg(Gaussian, 0, 3, show = True)
   
 print(Romberg)
